@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+  --void: #05060a;
+  --neon-cyan: #00f5ff;
+  --neon-magenta: #ff00e5;
+  --neon-lime: #c8ff3d;
+  --foreground: #e8ffff;
+}
+
+@theme inline {
+  --font-sans: var(--font-mono);
+  --font-mono: var(--font-mono);
+}
+
+body {
+  background-color: var(--void);
+  color: var(--foreground);
+  font-family: var(--font-mono), ui-monospace, monospace;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
