@@ -8,12 +8,15 @@ Mobile-first **merge puzzle** (“studio field” swipes) with cyberpunk neon UI
 - **`contracts/`** — Foundry `DailyCheckIn.sol` + tests (`forge test`).
 - **Static assets** — `web/public/app-icon.jpg` (1024×1024, &lt;1MB), `web/public/app-thumbnail.jpg` (1.91:1, &lt;1MB).
 
+**Production:** [https://game-development-sim.vercel.app](https://game-development-sim.vercel.app) — set this URL as the app domain on [Base.dev](https://www.base.dev) and match `NEXT_PUBLIC_SITE_URL` / `NEXT_PUBLIC_BASE_APP_ID` in Vercel env.
+
 ## Environment
 
-Copy [`web/.env.example`](web/.env.example) to `web/.env.local` and fill values. Required for production:
+Copy [`web/.env.example`](web/.env.example) to `web/.env.local` and adjust if needed. Values in `.env.example` match the current production deployment.
 
 | Variable | Purpose |
 |----------|---------|
+| `NEXT_PUBLIC_SITE_URL` | Canonical site URL (OG / `metadataBase`), e.g. `https://game-development-sim.vercel.app` |
 | `NEXT_PUBLIC_CHECK_IN_CONTRACT_ADDRESS` | Deployed `DailyCheckIn` on Base |
 | `NEXT_PUBLIC_BASE_APP_ID` | Base.dev app id (`<meta name="base:app_id" />`) |
 | `NEXT_PUBLIC_BUILDER_CODE` | `bc_…` from Base.dev → Settings → Builder Code |

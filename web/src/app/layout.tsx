@@ -18,11 +18,13 @@ const mono = JetBrains_Mono({
   weight: ["400", "500", "600"],
 });
 
-const baseAppId = process.env.NEXT_PUBLIC_BASE_APP_ID ?? "dev-placeholder";
+const baseAppId =
+  process.env.NEXT_PUBLIC_BASE_APP_ID ?? "69e33c8b8932f646eab89b45";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
+    process.env.NEXT_PUBLIC_SITE_URL ??
+      "https://game-development-sim.vercel.app",
   ),
   title: "Game Development Sim",
   description: "Neon studio merge game on Base — swipe the field, ship the build.",
