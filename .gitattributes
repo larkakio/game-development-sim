@@ -1,0 +1,4 @@
+# GitHub Linguist: the Next.js app dominates line counts and hides Solidity on the repo language bar.
+# Mark frontend and third-party Forge libs as vendored so statistics reflect on-chain contracts.
+web/** linguist-vendored
+lib/** linguist-vendored
